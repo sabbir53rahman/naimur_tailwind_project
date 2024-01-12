@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .custom-gradient-purple {
+      background-image: linear-gradient(135deg, #412BCC 0%, #7E38D8 100%);
+      /* You can adjust other properties as needed */
+    }
+    .custom-gradient-pink-orange {
+        background-image: linear-gradient(135deg, #E42B86 0%, #F78939 100%);
+        /* You can adjust other properties as needed */
+      }
+    .custom-gradient-purple-red {
+    background-image: linear-gradient(135deg, #AD3DCB 0%, #DE3B3B 100%);
+    /* You can adjust other properties as needed */
+    }
+    .custom-gradient-blue-purple {
+        background-image: linear-gradient(95deg, #119AF4 3.8%, #1904ED 44.61%, #119AF4 96.2%);
+        /* You can adjust other properties as needed */
+      }
+  }
+
+@layer components {
+    /* Define a custom button class */
+    .btn_custom {
+      display: flex;
+      padding: 16px 40px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 50px;
+      background: #FFF;
+
+    /* Shadow */
+      box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.03);
+    }
+    .service_btn_blue{
+      display: flex;
+      height: 40px;
+      padding: 8px 30px;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      border-radius: 10px;
+      color: white;
+      background-color: #1900ED;
+      border: 1px solid #FFF;
+  /* Shadow */
+    box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.03);
+    }
+    .service_btn_gray{
+      background: var(--Bootstrap-gray-400, #CED4DA);
+    }
+    .pricing_text_1{
+      color: #000;
+      font-family: Lato;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .pricing_text_2{
+      color: #878787;
+      font-family: Lato;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .large_button{
+        display: flex;
+        height: 75px;
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        align-self: stretch;
+    }
+    .main_heading {
+        color:  #172740;
+        font-family: Lato;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        /* You can add more utility classes or styles as needed */
+      }
+      .text_md{
+        color: #1B152B;
+        text-align: center;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .text_small{
+        font-family: Lato;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 166.667% */
+        letter-spacing: -0.072px;
+      }
+      .text_light{
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .text_custom {
+        text-align: center;
+        font-family: Lato;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; /* 33.6px */
+      }
+      .logo{
+        color: #FFF;
+        font-family: Work Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.64px;
+      }
+      
+      .small_container {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @media (min-width: 640px) {
+        .small_container {
+            max-width: 640px;
+        }
+    }
+    @media (min-width: 768px) {
+        .small_container {
+            max-width: 768px;
+        }
+    }
+    @media (min-width: 1024px) {
+        .small_container {
+            max-width: 1024px;
+        }
+    }
+    @media (min-width: 1036px) {
+        .small_container {
+            max-width: 1036px;
+        }
+    }
+    @media (min-width: 1536px) {
+        .small_container {
+            max-width: 1536px;
+        }
+    }
+    .max_width_271{
+        max-width: 271px;
+        padding: 20px;
+    }
+    .max_width_250{
+        width: 250px;
+        height: 250px;
+        padding: 20px;
+    }
+    .pricing_cont_1{
+      @apply md:w-[350px] flex items-center justify-start border border-gray-300 px-[20px]
+      h-[160px] md:h-[100px] min-w-[200px] w-[200px]
+    }
+    .pricing_cont_2{
+      @apply md:w-[230px] flex items-center justify-center border border-gray-300 px-[20px]
+      h-[160px] md:h-[100px] text-center min-w-[100px] w-[130px]
+    }
+    .feature_cont_1{
+      @apply md:w-[450px] flex items-center justify-start border border-gray-300 px-[20px]
+      h-[160px] md:h-[100px] min-w-[200px] w-[200px]
+    }
+    .feature_cont_2{
+      @apply md:w-[200px] flex items-center justify-center border border-gray-300 px-[20px]
+      h-[160px] md:h-[100px] text-center min-w-[100px] w-[130px]
+    }
+  }
