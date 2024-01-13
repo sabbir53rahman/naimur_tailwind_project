@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class=" small_container mx-auto py-[50px] flex flex-col md:flex-row justify-center gap-x-10">
+      <div class="wrapperLeft  ">
+        <div class="wrapper">
+            <div class="flex flex-col">
+              <p class="font-semibold pb-[20px]">Card Details</p>
+              <div
+                class="flex rounded-md shadow-sm border h-[60px] w-full lg:w-[500px] sm:max-w-md"
+              >
+                <span><i class="fa-regular fa-credit-card px-2 py-5"></i></span>
+                <input
+                  type="text"
+                  class="block flex-1 py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 italic focus:outline-none sm:text-sm sm:leading-6"
+                  placeholder="Card Number"
+                />
+                <p class="text-sm flex mr-2 text-gray-400 items-center">
+                  MM/YY/CVC
+                </p>
+              </div>
+              <span>
+                <p class="text_light pt-[20px]">Cardholder name*</p>
+              </span>
+              <div
+                class="flex rounded-md shadow-sm border h-[60px] w-full lg:w-[500px] mb-[40] sm:max-w-md"
+              >
+                <input
+                  type="text"
+                  class="block flex-1 py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 italic focus:outline-none sm:text-sm sm:leading-6"
+                  placeholder="Enter cardholder name"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col pt-[20px]">
+              <p class="font-semibold py-[20px]">Billing Address</p>
+              <p class="text_small text-gray-400">
+                Please provide the billing address associated with the credit card
+                you’ve <br />
+                provided above
+              </p>
+              <span>
+                <p class="text_light pt-[20px]">Country</p>
+              </span>
+              <div class="flex flex-col gap-[20px]">
+                <div
+                  class="flex rounded-md shadow-sm border h-[60px] w-full lg:w-[500px] sm:max-w-md"
+                >
+                  <input
+                    type="text"
+                    class="block flex-1 py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 italic focus:outline-none sm:text-sm sm:leading-6"
+                    placeholder="Select Country"
+                  />
+                  <span class="text-sm flex mr-2 text-gray-400 items-center"
+                    ><i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                </div>
+                <div
+                  class="flex rounded-md shadow-sm border h-[60px] w-full lg:w-[500px] sm:max-w-md"
+                >
+                  <input
+                    type="text"
+                    class="block flex-1 pr-[12px] py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 italic focus:outline-none sm:text-sm sm:leading-6"
+                    placeholder="Address Line 1"
+                  />
+                </div>
+                <div
+                  class="flex rounded-md shadow-sm border h-[60px] w-full lg:w-[500px] sm:max-w-md"
+                >
+                  <input
+                    type="text"
+                    class="block flex-1 py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 italic focus:outline-none sm:text-sm sm:leading-6"
+                    placeholder="Address Line 2"
+                  />
+                </div>
+                <div
+                  class="flex rounded-md shadow-sm border h-[60px] w-full lg:w-[500px] sm:max-w-md"
+                >
+                  <input
+                    type="text"
+                    class="block flex-1 py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 italic focus:outline-none sm:text-sm sm:leading-6"
+                    placeholder="City"
+                  />
+                </div>
+    
+                <div class="flex flex-col gap-[20px] md:flex-row gap-x-5">
+                  <div
+                    class="flex rounded-md shadow-sm border h-[60px] md:w-[160px] w-full lg:w-[215px] "
+                  >
+                    <input
+                      type="text"
+                      class="block flex-1 py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 italic focus:outline-none sm:text-sm sm:leading-6"
+                      placeholder="State/Province"
+                    />
+                  </div>
+                  <div
+                    class="flex rounded-md shadow-sm border h-[60px] md:w-[160px] w-full lg:w-[215px]"
+                  >
+                    <input
+                      type="text"
+                      class="block flex-1 py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 italic focus:outline-none sm:text-sm sm:leading-6"
+                      placeholder="Zip/Postal Code"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="wrapperRight">
+        <div class="flex flex-col">
+            <div class=" flex flex-col border rounded-md pr-5 pl-5 pb-[30px] pt-5 mt-10 md:w-[350px] lg:w-[500px] h-[128px]">
+                <p class=" mx-auto mb-3">Business Plan</p>
+                <div class="flex gap-[20px]">                 
+                        <p class="w-[220px]">Purchase Credits</p>
+                        <p class="text-right w-[220px]">$250.65 <br> 
+                        <span class="text-xs">Equivalent in IDR 3,891,782.67</span></p>             
+                </div>
+            </div>
+            <div class="">
+                <p class="font-bold text-center pt-5 pb-10">Payment Option</p>
+                <div class="flex flex-row gap-x-5 items-center justify-center pb-[30px]">
+                    <img src="img/pricing/visa.png" alt="">
+                    <img src="img/pricing/mastercard.png" alt="">
+                </div>
+                <button class="service_btn_blue text-white w-full px-4 py-2 rounded-md">Submit</button>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
